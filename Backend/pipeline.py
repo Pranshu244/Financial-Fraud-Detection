@@ -1,8 +1,3 @@
-"""
-The actual detection pipeline, as functions so FastAPI can run it live
-in memory (on startup, and again on demand via /pipeline/run) instead
-of reading a precomputed file.
-"""
 import pandas as pd
 import numpy as np
 import torch
@@ -180,12 +175,6 @@ def run_stage2(node_df, x, edge_index, model_path: str):
         logits = model(x, edge_index)
         probs = F.softmax(logits, dim=1)
         pred = logits.argmax(dim=1)
-
-    # Ground-truth columns (true_label, all_roles, is_suspicious, pattern_id,
-    # pattern_type) exist only in the synthetic training/eval data and are
-    # never read by this pipeline. Real bank data won't have them, and even
-    # when present (as in our own accounts.csv) they are intentionally
-    # ignored here so API output never depends on them.
     stage2 = node_df[["account_id"]].copy()
     stage2["predicted_label"] = [INV_LABEL_MAP[p] for p in pred.numpy()]
     for i, cls in INV_LABEL_MAP.items():
