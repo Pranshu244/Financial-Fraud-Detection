@@ -371,3 +371,14 @@ VittRakshak is designed to help financial crime analysts:
 ---
 
 # Prototype Demonstration
+## Login Page
+![image alt](https://github.com/Pranshu244/Financial-Fraud-Detection/blob/f0639b6dfa72ec3abd7c905e4da9294dc010a049/prototype%20images/Login%20Page.jpg.jpeg)
+
+## Dashboard
+![image alt](https://github.com/Pranshu244/Financial-Fraud-Detection/blob/f0639b6dfa72ec3abd7c905e4da9294dc010a049/prototype%20images/Dashboard.jpg)
+
+## Flagged Accounts
+![image alt](https://github.com/Pranshu244/Financial-Fraud-Detection/blob/f0639b6dfa72ec3abd7c905e4da9294dc010a049/prototype%20images/Flagged%20Accounts.jpg)
+
+## Account Inspector
+![image alt](https://github.com/Pranshu244/Financial-Fraud-Detection/blob/f0639b6dfa72ec3abd7c905e4da9294dc010a049/prototype%20images/Account%20Inspector.jpg)
