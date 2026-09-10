@@ -1,3 +1,12 @@
+# Local launcher scripts
+start_all.bat
+start_all.ps1
+
+# Node dependencies & build output
+node_modules/
+dist/
+.vite/
+
 # Virtual environment
 myenv/
 .venv/
@@ -12,6 +21,7 @@ __pycache__/
 
 # Environment / secrets
 .env
+.env.local
 
 # OS files
 .DS_Store

@@ -1,0 +1,16 @@
+# Frontend Requirements & Package Dependencies
+
+# Framework & Core
+react@^18.2.0
+react-dom@^18.2.0
+
+# UI & Animation Components
+framer-motion@^13.1.1
+lucide-react@^0.344.0
+
+# Build Tools & Utilities (Dev Dependencies)
+vite@^5.1.4
+@vitejs/plugin-react@^4.2.1
+tailwindcss@^3.4.1
+postcss@^8.4.35
+autoprefixer@^10.4.18
